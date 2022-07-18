@@ -1,0 +1,60 @@
+.state-data__button {
+  background-color: $seafoam;
+  padding: 5px 20px;
+  margin: 20px 10px 20px 40px;
+  color: $bg-color;
+  border: none;
+  border-radius: 10px;
+  font-family: 'decima-mono-pro';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.request-data__button {
+  background-color: $seafoam;
+  padding: 5px 20px;
+  margin: 20px 10px;
+  color: $bg-color;
+  border: none;
+  border-radius: 10px;
+  font-family: 'decima-mono-pro';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.footer .cta__button {
+  background-color: $stroke-color;
+  padding: 5px 20px;
+  margin: 10px 0;
+  color: $bg-color;
+  border: none;
+  border-radius: 10px;
+  font-family: 'decima-mono-pro';
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (max-width: 1023px) {
+  .state-data__button {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .cta__button {
+    margin: 10px 0;
+  }
+  .request-data__button {
+    background-color: $seafoam;
+    padding: 5px 20px;
+    margin: 0 0 20px 20px;
+    color: $bg-color;
+    border: none;
+    border-radius: 10px;
+    font-family: 'decima-mono-pro';
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

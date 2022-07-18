@@ -1,0 +1,43 @@
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.25fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+
+  .title, .nationwide-figures, .nationwide-activity, .footer {
+    padding: 40px;
+  }
+
+  .state-data {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    overflow: hidden;
+  }
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+
+  .title, .nationwide-figures, .nationwide-activity, .footer {
+    padding: 40px;
+  }
+
+  .figures, .activity {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .nationwide-figures, .nationwide-activity, .footer {
+    padding: 20px;
+  }
+}

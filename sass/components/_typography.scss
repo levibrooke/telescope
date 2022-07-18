@@ -1,0 +1,33 @@
+// imports
+@include font-face('decima-mono-pro--bold', '/static/fonts/DecimaMonoPro-Bold.ttf');
+@include font-face('decima-mono-pro', '/static/fonts/DecimaMonoPro.ttf');
+@include font-face('roboto--black', '/static/fonts/Roboto-Black.ttf');
+@include font-face('roboto--bold', '/static/fonts/Roboto-Bold.ttf');
+@include font-face('roboto--light', '/static/fonts/Roboto-Light.ttf');
+@include font-face('inconsolata', '/static/fonts/Inconsolata.otf');
+
+// assignments
+h1 {
+  font-family: 'roboto--black';
+  color: $seafoam;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'roboto--bold';
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'decima-mono-pro';
+  text-transform: uppercase;
+  color: $light-gray;
+  font-size: 0.75rem;
+}
+
+p {
+  font-family: 'inconsolata';
+  font-size: $base-font-size * 1.125;
+  line-height: $base-line-height;
+  color: $white;
+}
