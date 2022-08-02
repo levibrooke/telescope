@@ -1,5 +1,8 @@
 # Telescope
-A one-page app that demonstrates a small live sampling of Circa Victor's data. 
+A one-page app that demonstrates a small live sampling of Circa Victor's data.
+
+## Launch Announcement
+- [Telescope. A stock ticker for the Political Economy](https://medium.com/circa-victor/telescope-a-stock-ticker-for-the-political-economy-26e884f795ef)
 
 ## Resources
 - [Planning document](https://quip.com/jKBbAG9eKROl)
