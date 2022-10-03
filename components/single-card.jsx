@@ -1,7 +1,6 @@
 import React from 'react';
 import util from './util';
 
-
 const SingleCard = ({ name, cycle, mouseOver, mouseLeave }) => {
   const raisedInState = cycle.raised.in_state;
   const raisedOutOfState = cycle.raised.out_of_state;
@@ -47,7 +46,6 @@ const SingleCard = ({ name, cycle, mouseOver, mouseLeave }) => {
               </p>
             </td>
           </tr>
-          {/* {fundedBlock} */}
           <tr>
             <td className="state__key">
               <h3>Total Spent on Federal Races</h3>
@@ -56,23 +54,6 @@ const SingleCard = ({ name, cycle, mouseOver, mouseLeave }) => {
               <p>{totalSpent}</p>
             </td>
           </tr>
-          {/* <tr>
-            <td className="state__key">
-              <h3>Spent in Support</h3>
-            </td>
-            <td className="state__value">
-              <p>{supportSpend}</p>
-            </td>
-          </tr>
-          <tr>
-            <td className="state__key">
-              <h3>Spent in Opposition</h3>
-            </td>
-            <td className="state__value">
-              <p>{oppositionSpend}</p>
-            </td>
-          </tr>
-          {categoryBlock} */}
         </tbody>
       </table>
     </li>

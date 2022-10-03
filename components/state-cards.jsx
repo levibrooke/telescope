@@ -18,6 +18,8 @@ class StateCards extends React.Component {
   }
 
   componentDidMount = () => {
+    this.initializeSlider();
+
     if (this.props.search) {
       this.setState({ wasSearchCancelled: this.props.search});
     };
@@ -27,31 +29,22 @@ class StateCards extends React.Component {
   }
 
   componentDidUpdate = (prevProps, prevState) => {
-    if (this.props !== prevProps) {
-      this.initializeSlider();
-    }
 
     if (this.state !== prevState) {
-      this.initializeSlider();
-
       if (this.state.goToState !== null) {
         const stateTarget = window.innerWidth >= 1024
         ? this.state.goToState - 1
         : this.state.goToState;
 
-        const stateIndex = index => window.innerWidth >= 1024
-        ? index + 1
-        : index;
-
-        this.siema.goTo(stateTarget, function() {
-          const index = this.currentSlide;
-          const selectedState = this.innerElements[stateIndex(index)];
-        })
+        this.siema.goTo(stateTarget);
       }
     }
   }
 
   initializeSlider = () => {
+    if("siema" in this) {
+      return this;
+    }
     this.siema = new Siema({
       selector: '.state-card-list',
       duration: (!isMobileOnly) ? 1500 : 0,
