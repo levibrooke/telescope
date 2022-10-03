@@ -18,12 +18,7 @@ const formatTopCategories = (categories) => {
     return <tbody key={i}>
              <tr>
                <td className="name">
-                 <p>{category.rank}. {category.name}</p>
-               </td>
-             </tr>
-             <tr>
-               <td className="amount">
-                 <p>{formatMoney(category.amount)}</p>
+                 <p>{category.name}</p>
                </td>
              </tr>
            </tbody>;
@@ -35,17 +30,7 @@ const formatTopFunded = (topFunded) => {
     return <tbody key={i}>
              <tr>
                <td className="name">
-                 <p>
-                   {i+1}.  
-                   <a target="_blank" rel="noreferrer" href={"https://www.fec.gov/data/committee/" + funded.fec_id + "/?cycle=2018"}>
-                     {funded.name}
-                   </a>
-                 </p>
-               </td>
-             </tr>
-             <tr>
-               <td className="amount">
-                 <p>{funded.transactions.toLocaleString()} @ {formatMoney(funded.amount)}</p>
+                 <p>{funded.name}</p>
                </td>
              </tr>
            </tbody>;

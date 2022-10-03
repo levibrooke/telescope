@@ -111,12 +111,11 @@ class StateCards extends React.Component {
         <ul className="state-card-list">
           {
             Object.values(data)
-              .map(({ name, raise, spend }) => 
+              .map(({ name, cycle }) =>
                 <SingleCard
                   key={name}
                   name={name}
-                  raise={raise}
-                  spend={spend}
+                  cycle={cycle}
                   mouseOver={this.stopSlider}
                   mouseLeave={this.playSlider}
                 />
