@@ -1,10 +1,10 @@
 // imports
-@include font-face('decima-mono-pro--bold', '/static/fonts/DecimaMonoPro-Bold.ttf');
-@include font-face('decima-mono-pro', '/static/fonts/DecimaMonoPro.ttf');
-@include font-face('roboto--black', '/static/fonts/Roboto-Black.ttf');
-@include font-face('roboto--bold', '/static/fonts/Roboto-Bold.ttf');
-@include font-face('roboto--light', '/static/fonts/Roboto-Light.ttf');
-@include font-face('inconsolata', '/static/fonts/Inconsolata.otf');
+@include font-face('decima-mono-pro--bold', '/fonts/DecimaMonoPro-Bold.ttf');
+@include font-face('decima-mono-pro', '/fonts/DecimaMonoPro.ttf');
+@include font-face('roboto--black', '/fonts/Roboto-Black.ttf');
+@include font-face('roboto--bold', '/fonts/Roboto-Bold.ttf');
+@include font-face('roboto--light', '/fonts/Roboto-Light.ttf');
+@include font-face('inconsolata', '/fonts/Inconsolata.otf');
 
 // assignments
 h1 {
