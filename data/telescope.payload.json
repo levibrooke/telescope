@@ -2,7 +2,7 @@
   "states":{  
     "AL":{  
       "name":"Alabama",
-      "raise":{
+      "raised":{
         "in_state":61288901,
         "out_of_state":82277129,
         "top":{

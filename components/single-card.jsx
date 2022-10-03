@@ -2,49 +2,11 @@ import React from 'react';
 import util from './util';
 
 
-const SingleCard = ({ name, raise, spend, mouseOver, mouseLeave }) => {
-  const raisedInState = raise.in_state;
-  const raisedOutOfState = raise.out_of_state;
+const SingleCard = ({ name, cycle, mouseOver, mouseLeave }) => {
+  const raisedInState = cycle.raised.in_state;
+  const raisedOutOfState = cycle.raised.out_of_state;
 
-  const hasFunded = (raise.top.funded);
-  let fundedBlock = null;
-  if (hasFunded) {
-    const topFunded = util.formatTopFunded(raise.top.funded);
-
-    fundedBlock = <tr>
-                    <td className="state__key state__item--double-border">
-                      <h3>Top Funded</h3>
-                    </td>
-                    <td className="state__value state__item--double-border">
-                      <table className="top-funded">
-                        {topFunded}
-                      </table>
-                    </td>
-                  </tr>;
-  }
-
-  const totalSpent = util.formatMoney(spend.total);
-  const supportSpend = util.formatMoney(spend.support);
-  const oppositionSpend = util.formatMoney(spend.oppose);
-
-  const hasCategories = ((spend.top.categories[0].name !== 'uncategorized')
-                          && (spend.top.categories[0].amount !== 0));
-  let categoryBlock = null;
-  if (hasCategories) {
-    const topCategories = util.formatTopCategories(spend.top.categories);
-
-    categoryBlock = <tr>
-                      <td className="state__key">
-                        <h3>Top Categories</h3>
-                      </td>
-                      <td className="state__value">
-                        <table className="top-categories">
-                          {topCategories}
-                        </table>
-                      </td>
-                    </tr>;
-
-  }
+  const totalSpent = util.formatMoney(cycle.spent.total);
 
   return (
     <li 
@@ -85,7 +47,7 @@ const SingleCard = ({ name, raise, spend, mouseOver, mouseLeave }) => {
               </p>
             </td>
           </tr>
-          {fundedBlock}
+          {/* {fundedBlock} */}
           <tr>
             <td className="state__key">
               <h3>Total Spent on Federal Races</h3>
@@ -94,7 +56,7 @@ const SingleCard = ({ name, raise, spend, mouseOver, mouseLeave }) => {
               <p>{totalSpent}</p>
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <td className="state__key">
               <h3>Spent in Support</h3>
             </td>
@@ -110,7 +72,7 @@ const SingleCard = ({ name, raise, spend, mouseOver, mouseLeave }) => {
               <p>{oppositionSpend}</p>
             </td>
           </tr>
-          {categoryBlock}
+          {categoryBlock} */}
         </tbody>
       </table>
     </li>
