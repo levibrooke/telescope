@@ -1,39 +1,15 @@
 {  
-  "states":{  
+  "stats":{  
     "AL":{  
       "name":"Alabama",
       "raise":{
         "in_state":61288901,
-        "out_of_state":82277129,
-        "top":{
-          "funded":[
-
-          ]
-        }
+        "out_of_state":82277129
       },
       "spend":{
         "total":123234506,
         "support":0,
-        "oppose":0,
-        "top":{
-          "categories":[
-            {
-              "name":"Digital",
-              "rank":1,
-              "amount":0
-            },
-            {
-              "name":"Direct Mail",
-              "rank":1,
-              "amount":0
-            },
-            {
-              "name":"TV Ads",
-              "rank":1,
-              "amount":0
-            }
-          ]
-        }
+        "oppose":0
       },
       "cycle":{  
         "raised":{  
@@ -1058,22 +1034,13 @@
         "top":{
           "funded":[
             {
-              "name":"It Starts Today",
-              "fec_id":0,
-              "transactions":0,
-              "amount":1
+              "name":"It Starts Today"
             },
             {
-              "name":"Baby Got Pac",
-              "fec_id":0,
-              "transactions":0,
-              "amount":1
+              "name":"Baby Got Pac"
             },
             {
-              "name":"Priorities USA",
-              "fec_id":0,
-              "transactions":0,
-              "amount":1
+              "name":"Priorities USA"
             }
           ]
         }
@@ -1088,19 +1055,13 @@
         "top":{
           "categories":[
             {
-              "name":"Digital",
-              "rank":1,
-              "amount":0
+              "name":"Digital"
             },
             {
-              "name":"Direct Mail",
-              "rank":1,
-              "amount":0
+              "name":"Direct Mail"
             },
             {
-              "name":"TV Ads",
-              "rank":1,
-              "amount":0
+              "name":"TV Ads"
             }
           ]
         }

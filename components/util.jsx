@@ -37,7 +37,7 @@ const formatTopFunded = (topFunded) => {
                <td className="name">
                  <p>
                    {i+1}.  
-                   <a target="_blank" href={"https://www.fec.gov/data/committee/" + funded.fec_id + "/?cycle=2018"}>
+                   <a target="_blank" rel="noreferrer" href={"https://www.fec.gov/data/committee/" + funded.fec_id + "/?cycle=2018"}>
                      {funded.name}
                    </a>
                  </p>

@@ -1,22 +1,39 @@
 import React from 'react';
+import Image from 'next/image';
 
-export default () => {
+export default function footer() {
   return (
     <section className="footer">
       <div className="credits">
         <div className="credits__block">
-          <img src="/static/img/telescope.png" alt="Telescope"/>
-          <img src="/static/img/torch.png" alt="Circa Victor"/>
+          <Image 
+            src="/img/telescope.png" 
+            width={80} 
+            height={29} 
+            alt="Telescope"
+          />
+          <Image 
+            src="/img/torch.png" 
+            width={14} 
+            height={26} 
+            alt="Circa Victor"
+          />
           <div className="credits__block-copy">
             <h3>Data provided by</h3>
-            <h3><a href="https://circavictor.com" target="_blank">Circa Victor</a></h3>
+            <h3><a href="https://circavictor.com" target="_blank" rel="noreferrer">Circa Victor</a></h3>
           </div>
-          <img id="aws-apn" src="/static/img/aws-apn.jpg" alt="aws partner network"/>
+          <Image 
+            id="aws-apn"
+            src="/img/aws-apn.jpg" 
+            width={109} 
+            height={35}
+            alt="aws partner network"
+          />
         </div>
       </div>
       <div className="cta">
-        <a className="cta__button" href="https://twitter.com/intent/tweet?text=Telescope 2018 from Circa Victor&via=circavictor&url=https://telescope.circavictor.com" target="_blank">Share This</a>
-        <h3>This political economy ticker is an ongoing project. You can help by <a href="mailto:press@circavictor.com?subject=Let’s Connect!" target="_blank">contributing ideas</a> and <a href="https://twitter.com/intent/tweet?text=Telescope 2018 from Circa Victor&via=circavictor&url=https://telescope.circavictor.com" target="_blank">sharing</a> with your network.</h3>
+        <a className="cta__button" href="https://twitter.com/intent/tweet?text=Telescope 2018 from Circa Victor&via=circavictor&url=https://telescope.circavictor.com" target="_blank" rel="noreferrer">Share This</a>
+        <h3>This political economy ticker is an ongoing project. You can help by <a href="mailto:press@circavictor.com?subject=Let’s Connect!" target="_blank" rel="noreferrer">contributing ideas</a> and <a href="https://twitter.com/intent/tweet?text=Telescope 2018 from Circa Victor&via=circavictor&url=https://telescope.circavictor.com" target="_blank" rel="noreferrer">sharing</a> with your network.</h3>
       </div>
     </section>
   )
