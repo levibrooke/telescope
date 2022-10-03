@@ -46,20 +46,6 @@ h1 > span {
     }
   }
   .top-categories, .top-funded {
-    tbody:nth-child(2) {
-      tr:nth-child(1) {
-        td {
-          padding-top: 10px;
-          border-top: 1px solid $light-gray;
-        }
-      }
-      tr:nth-child(2) {
-        td {
-          padding-bottom: 10px;
-          border-bottom: 1px solid $light-gray;
-        }
-      }
-    }
     td {
       border-bottom: 1px solid $bg-color;
     }
