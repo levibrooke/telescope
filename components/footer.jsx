@@ -1,19 +1,23 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 export default function footer() {
+  const css = {
+    marginLeft: "20px"
+  }
   return (
     <section className="footer">
       <div className="credits">
         <div className="credits__block">
           <Image 
-            src="/img/telescope.png" 
+            src="/img/telescope.png"
             width={80} 
             height={29} 
             alt="Telescope"
           />
           <Image 
-            src="/img/torch.png" 
+            src="/img/torch.png"
+            style={css}
             width={14} 
             height={26} 
             alt="Circa Victor"

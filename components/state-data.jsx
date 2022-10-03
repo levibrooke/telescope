@@ -24,11 +24,6 @@ class StateData extends React.Component {
   }
 
   handleStateChange = (id) => {
-    const stateName = this.props.data.states[Object.keys(this.props.data.states)[id]].name;
-    if (typeof ga === 'function') {
-      ga('send', 'event', 'Telescope', 'search-for-state', stateName);
-    }
-
     this.setState({selectedState: id, isSearchOpen: false})
   }
 

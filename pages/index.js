@@ -16,10 +16,11 @@ export default function Home({ spending }) {
     <>
       <Head>
         <title>Telescope - Circa Victor</title>
+        <meta name="description" content="A Stock Ticker for the Political Economy" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <meta property="og:title" content="Telescope" />
         <meta property="og:description" content="A Stock Ticker for the Political Economy" />
-        <meta property="og:image" content="https://telescope.circavictor.com/static/img/thumbnail.jpg" />
+        <meta property="og:image" content="/img/thumbnail.jpg" />
         <meta property="og:url" content="https://telescope.circavictor.com" />
       </Head>
       <main className="container">
