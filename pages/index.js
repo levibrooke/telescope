@@ -19,6 +19,10 @@ export default function Home({ spending }) {
         <meta name="description" content="A Stock Ticker for the Political Economy" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <link rel="shortcut icon" href="/img/torch.png" />
+        <meta property="og:title" content="Telescope - Circa Victor" />
+        <meta property="og:description" content="A Stock Ticker for the Political Economy" />
+        <meta property="og:url" content="https://telescope.levibrooke.com" />
+        <meta property="og:image" content="https://telescope.levibrooke.com/img/thumbnail.jpg" />
       </Head>
       <main className="container">
         <section className="title">
